@@ -1,4 +1,5 @@
 import { useState }  from "react";
+import UserComponent from "./UserComponent";
 function App() {
   const  [fruits, setFruits] = useState(["Apple", "Banana", "Cherry"]);
   const handleFruit=()=>{
@@ -10,6 +11,7 @@ function App() {
       <h1>{fruits}</h1>
  
  <button onClick={handleFruit}>Change Fruit</button>
+ <UserComponent/>
     </div>
   )
 

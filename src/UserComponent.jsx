@@ -1,10 +1,14 @@
-function Login(){
+import{useState} from'react';
 
-  return(
+const UserComponent = () => {
+  const [count, setCount] = useState(0)
 
-    <div>
-      <h2>Login</h2>
-    </div>
+  return (
+   <div>
+    <h1>Count: {count}</h1>
+    <button onClick={() => setCount(count + 1)}>Increment</button>
+   </div>
   )
 }
-export default Login; 
+
+export default UserComponent;
